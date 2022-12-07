@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orientação a Objetos</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/pessoa.js" defer></script>
+    <script src="js/script.js" defer></script>
+    <script src="https://kit.fontawesome.com/4ab5498bca.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1>Cadastro de pessoas</h1>
+    </header>
+    <section>
+        <div class="input-box">
+            <input type="text" id="name" required>
+            <label for="name">Nome</label>
+        </div>
+        <div class="input-box">
+            <input type="text" id="email" required>
+            <label for="email">Email</label>
+        </div>
+        <div class="input-box">
+            <input type="tel" id="phone" required>
+            <label for="phone">Telefone</label>
+        </div>
+        <div class="input-box">
+            <input type="text" id="cpf" required>
+            <label for="cpf">CPF</label>
+        </div>
+        <div class="input-box">
+            <input type="password" id="password" required>
+            <label for="password">Senha</label>
+        </div>
+        <div class="buttons">
+            <button type="submit" id="submit">Cadastrar</button>
+            <button type="button" id="update" onclick="update()">Atualizar</button>
+        </div>
+    </section>
+    <section id="people">
+        <h2>Pessoas cadastradas:</h2>
+        <div id="dados"></div>
+    </section>
+    <footer>
+        <ul>
+            <li>
+                <a href="https://github.com/AdryanMaikel" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </li>
+            <li>
+                <a href="mailto:adryanmaikel@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+            </li>
+        </ul>
+        <address>&copy; Adryan Maikel <i class="fa-solid fa-heart"></i></address>
+    </footer>
+
+</body>
+</html>
